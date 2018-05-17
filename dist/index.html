@@ -15,20 +15,42 @@
 </head>
 <body>
     <section class="container top-level">
-        <section class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <section class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-xs-12">
             <p>This is a column for a logo</p>
         </section>
-        <section class="col-xl-10 col-lg-9 col-md-8 col-sm-6 col-xs-12">
+        <section class="col-xl-10 col-lg-10 col-md-9 col-sm-6 col-xs-12">
             <p>This is for some nice header and/or navigation</p>
         </section>
     </section>
+    <section class="container top-level">
+        <nav>
+            <button class="toggle-nav">Menu</button>
+            <nav class="main-menu">
+                <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Demos</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Other link</a></li>
+                        <li><a href="#">Other link with subitems</a>
+                            <ul>
+                                <li><a href="#">SubItem x</a></li>
+                                <li><a href="#">SubItem x</a></li>
+                                <li><a href="#">SubItem x</a></li>
+                                <li><a href="#">SubItem x</a></li>
+                                <li><a href="#">SubItem x</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+            </nav>
+        </nav>
+    </section>
     <section class="container top-level main" id="main">
-        <section class="col-xl-2 col-lg-3 col-md-4 col-sm-12 col-xs-12">
+        <section class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
             <p>This is a sidebar</p>
         </section>
-        <section class="col-xl-8 col-lg-6 col-md-4 col-sm-12 col-xs-12" id-"main">
+        <section class="col-lg-8 col-md-6 col-sm-12 col-xs-12" id-"main">
             <h1>Heading 1</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p>Lorem Ipsum is <a href="#">simply dummy</a> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             <h2>Heading 2</h2>
             <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             <h3>Heading 3</h3>
@@ -39,12 +61,64 @@
             <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             <h6>Heading 6</h6>
             <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <ul>
+                <li>List item</li>
+                <li>Another one</li>
+                <li>Third li</li>
+                <li>This is a fourth</li>
+                <li>And a fifth</li>
+                <li>Item with subitems
+                    <ul>
+                        <li>sub-item</li>
+                        <li>sub-item</li>
+                        <li>sub-item</li>
+                        <li>sub-item</li>
+                        <li>Sub-item with sub-sub-item
+                            <ul>
+                                <li>sub-sub</li>
+                                <li>sub-sub</li>
+                                <li>sub-sub</li>
+                                <li>sub-sub</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ol>
+                <li>List item</li>
+                <li>Another one</li>
+                <li>Third li</li>
+                <li>This is a fourth</li>
+                <li>And a fifth</li>
+                <li>Item with subitems
+                    <ol>
+                        <li>sub-item</li>
+                        <li>sub-item</li>
+                        <li>sub-item</li>
+                        <li>sub-item</li>
+                        <li>Sub-item with sub-sub-item
+                            <ol>
+                                <li>sub-sub</li>
+                                <li>sub-sub</li>
+                                <li>sub-sub</li>
+                                <li>sub-sub</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
         </section>
-        <section class="col-xl-2 col-lg-3 col-md-4 col-sm-12 col-xs-12">
+        <section class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
             <p>This is another sidebar</p>
         </section>
     </section>
-    <script src="assets/js/main.min.js"></script>
+    <section class="container top-level">
+            <section class="col-xl-2 col-lg-3 col-md-4 col-sm-12 col-xs-12">Footer item</section>
+            <section class="col-xl-2 col-lg-3 col-md-4 col-sm-12 col-xs-12">Footer item</section>
+            <section class="col-xl-2 col-lg-3 col-md-4 col-sm-12 col-xs-12">Footer item</section>
+            <section class="col-xl-2 col-lg-3 col-md-4 col-sm-12 col-xs-12">Footer item</section>
+    </section>
+    <script src="assets/js/main.js"></script>
     <script>
         document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
         ':35729/livereload.js?snipver=1"></' + 'script>')

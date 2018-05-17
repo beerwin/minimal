@@ -1,0 +1,87 @@
+@mixin navi-big {
+    .main-menu {
+        display: block;
+        position: static;
+        width: auto;
+        height: auto;
+        top: auto;
+        overflow: visible;
+    }
+
+    body.menu-open {
+        padding-left: 0;
+    }
+
+    .toggle-nav {
+        display: none;
+    }
+}
+
+@mixin navi-small {
+
+    body {
+        @include transition(.3s all ease-in-out);
+    }
+
+    body.menu-open {
+        padding-left: 25rem;
+        @include transition(.3s all ease-in-out);
+    }
+
+    .main-menu {
+        display:block;
+        position: fixed;
+        right:100%;
+        width: 25rem;
+        top: 0;
+        height: 100%;
+        overflow: auto;
+        @include transition(.3s all ease-in-out);
+    }
+
+    .main-menu.menu-open {
+        width: 25rem;
+        right: calc(100% - 25rem);
+        @include transition(.3s all ease-in-out);
+    }
+
+    .toggle-nav{
+        display: inline-block;
+    }
+}
+
+.toggle-nav{
+    @include for-tablet-portrait-up {
+        display: block;
+    }
+
+    @include for-tablet-landscape-up {
+        display: block;
+    }
+
+    @include for-desktop-up {
+        display: none;
+    }
+
+    @include for-big-desktop-up {
+        display: none;
+    }
+
+    @include for-phone-only {
+        display: block;
+    }
+}
+
+
+
+@include for-tablet-portrait-up {
+    @include navi-small
+}
+
+@include for-tablet-landscape-up {
+    @include navi-big;
+}
+
+@include for-phone-only {
+    @include navi-small
+}

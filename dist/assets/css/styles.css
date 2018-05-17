@@ -91,7 +91,120 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1em; }
 
 p {
+  margin-top: 1em;
   margin-bottom: 1em; }
+
+ul, ol {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 2rem; }
+
+ul ul, ul ol, ol ol {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+ul {
+  list-style: disc; }
+
+ul ul {
+  list-style: circle; }
+
+ul ul ul {
+  list-style: square; }
+
+ol {
+  list-style: decimal; }
+
+ol ol {
+  list-style: lower-alpha; }
+
+ol ol ol {
+  list-style: lower-roman; }
+
+@media (min-width: 600px) {
+  .toggle-nav {
+    display: block; } }
+
+@media (min-width: 900px) {
+  .toggle-nav {
+    display: block; } }
+
+@media (min-width: 1200px) {
+  .toggle-nav {
+    display: none; } }
+
+@media (min-width: 1800px) {
+  .toggle-nav {
+    display: none; } }
+
+@media (max-width: 599px) {
+  .toggle-nav {
+    display: block; } }
+
+@media (min-width: 600px) {
+  body {
+    -webkit-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out; }
+  body.menu-open {
+    padding-left: 25rem;
+    -webkit-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out; }
+  .main-menu {
+    display: block;
+    position: fixed;
+    right: 100%;
+    width: 25rem;
+    top: 0;
+    height: 100%;
+    overflow: auto;
+    -webkit-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out; }
+  .main-menu.menu-open {
+    width: 25rem;
+    right: calc(100% - 25rem);
+    -webkit-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out; }
+  .toggle-nav {
+    display: inline-block; } }
+
+@media (min-width: 900px) {
+  .main-menu {
+    display: block;
+    position: static;
+    width: auto;
+    height: auto;
+    top: auto;
+    overflow: visible; }
+  body.menu-open {
+    padding-left: 0; }
+  .toggle-nav {
+    display: none; } }
+
+@media (max-width: 599px) {
+  body {
+    -webkit-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out; }
+  body.menu-open {
+    padding-left: 25rem;
+    -webkit-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out; }
+  .main-menu {
+    display: block;
+    position: fixed;
+    right: 100%;
+    width: 25rem;
+    top: 0;
+    height: 100%;
+    overflow: auto;
+    -webkit-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out; }
+  .main-menu.menu-open {
+    width: 25rem;
+    right: calc(100% - 25rem);
+    -webkit-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out; }
+  .toggle-nav {
+    display: inline-block; } }
 
 .top-level {
   margin: 0 auto; }
