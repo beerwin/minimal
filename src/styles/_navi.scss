@@ -2,7 +2,7 @@
     .main-menu {
         display: block;
         position: static;
-        width: 100%;
+        width: auto;
         height: auto;
         top: auto;
         overflow: visible;
@@ -10,6 +10,10 @@
 
     body.menu-open {
         padding-left: 0;
+    }
+
+    .main-menu.menu-open {
+        width:auto;
     }
 
     .toggle-nav {
