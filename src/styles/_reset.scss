@@ -37,6 +37,9 @@ ol, ul {
 }
 blockquote, q {
 	quotes: none;
+	font-style: italic;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
