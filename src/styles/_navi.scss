@@ -15,6 +15,10 @@
     .toggle-nav {
         display: none;
     }
+
+    #main {
+        order: initial;
+    }
 }
 
 @mixin navi-small {
@@ -47,6 +51,10 @@
 
     .toggle-nav{
         display: inline-block;
+    }
+
+    #main {
+        order: -1;
     }
 }
 

@@ -165,7 +165,11 @@ ol ol ol {
     -webkit-transition: 0.3s all ease-in-out;
     transition: 0.3s all ease-in-out; }
   .toggle-nav {
-    display: inline-block; } }
+    display: inline-block; }
+  #main {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1; } }
 
 @media (min-width: 900px) {
   .main-menu {
@@ -178,7 +182,11 @@ ol ol ol {
   body.menu-open {
     padding-left: 0; }
   .toggle-nav {
-    display: none; } }
+    display: none; }
+  #main {
+    -webkit-box-ordinal-group: initial;
+        -ms-flex-order: initial;
+            order: initial; } }
 
 @media (max-width: 599px) {
   body {
@@ -204,7 +212,11 @@ ol ol ol {
     -webkit-transition: 0.3s all ease-in-out;
     transition: 0.3s all ease-in-out; }
   .toggle-nav {
-    display: inline-block; } }
+    display: inline-block; }
+  #main {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1; } }
 
 .top-level {
   margin: 0 auto; }
