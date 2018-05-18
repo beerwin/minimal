@@ -1,0 +1,74 @@
+// navigation colors:
+$navi-background: $accent;
+$navi-color: $clear;
+$navi-active-background: $accentLight;
+$navi-active-color: $clear;
+$navi-hover-background: $compRight;
+$navi-hover-color: $text;
+
+body {
+    font-family: "Segoe UI", helvetica, sans-serif;
+}
+
+#main-nav,
+nav.main-menu {
+    background-color: $navi-background;
+}
+
+nav.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.main-menu ul ul {
+    background-color: $neutral;
+}
+
+nav.main-menu li a {
+    display: block;
+    color: $navi-color;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav.main-menu li:hover>a {
+    background-color: $navi-hover-background;
+    color: $navi-hover-color;
+}
+
+nav.main-menu li.active>a {
+    background-color: $navi-active-background;
+    color: $navi-active-color;
+}
+
+@include for-tablet-landscape-up {
+    .main-menu ul {
+        
+    }
+    .main-menu ul li {
+        display: inline-block;
+    }
+
+    .main-menu ul li ul {
+        display: none;
+        position: absolute;
+    }
+
+    .main-menu ul li:hover ul {
+        display: block;
+    }
+
+    nav.main-menu ul ul {
+        background-color: $clear;
+        @include box-shadow(1px 1px 2px $neutral);
+    }
+
+    .main-menu li li {
+        display: block;
+    }
+
+    .main-menu li li a {
+        color: $text
+    }
+}
