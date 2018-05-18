@@ -2,7 +2,7 @@
     .main-menu {
         display: block;
         position: static;
-        width: auto;
+        width: 100%;
         height: auto;
         top: auto;
         overflow: visible;
@@ -16,7 +16,7 @@
         display: none;
     }
 
-    #main {
+    #main-nav {
         order: initial;
     }
 }
@@ -53,7 +53,7 @@
         display: inline-block;
     }
 
-    #main {
+    #main-nav {
         order: -1;
     }
 }
