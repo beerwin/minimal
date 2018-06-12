@@ -8,6 +8,7 @@ $navi-hover-color: $text;
 
 body {
     font-family: "Segoe UI", helvetica, sans-serif;
+    line-height: 1.4em;
 }
 
 #main-nav,
@@ -43,9 +44,6 @@ nav.main-menu li.active>a {
 }
 
 @include for-tablet-landscape-up {
-    .main-menu ul {
-        
-    }
     .main-menu ul li {
         display: inline-block;
     }

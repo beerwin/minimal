@@ -28,12 +28,12 @@
 @mixin navi-small {
 
     body {
-        @include transition(.3s all ease-in-out);
+        @include transition(.3s all ease);
     }
 
     body.menu-open {
         padding-left: 25rem;
-        @include transition(.3s all ease-in-out);
+        @include transition(.3s all ease);
     }
 
     .main-menu {
@@ -44,17 +44,58 @@
         top: 0;
         height: 100%;
         overflow: auto;
-        @include transition(.3s all ease-in-out);
+        @include transition(.3s all ease);
     }
 
     .main-menu.menu-open {
         width: 25rem;
         right: calc(100% - 25rem);
-        @include transition(.3s all ease-in-out);
+        @include transition(.3s all ease);
     }
 
     .toggle-nav{
         display: inline-block;
+        width: 6rem;
+        height: 5rem;
+        background-color: transparent;
+        border: .2rem solid $clear;
+        color: transparent;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        position: relative;
+        padding: .8rem;
+        margin: .5rem;
+    }
+
+    .toggle-nav:before {
+        content: "";
+        border-bottom: .6rem solid $clear;
+        display: block;
+        top: .8rem;
+        position: absolute;
+        width: 4rem;
+        @include transition(all .5s ease);
+    }
+
+    .toggle-nav:after {
+        content: "";
+        border-bottom: 1.8rem double $clear;
+        display: block;
+        bottom: .8rem;
+        position: absolute;
+        width: 4rem;
+        @include transition(all .5s ease);
+    }
+
+    .menu-open .toggle-nav::before {
+        transform:  translate(0 1.1rem) rotate(-45deg);
+        @include transition(all .5s ease);
+    }
+
+    .menu-open .toggle-nav::after {
+        transform: translate(0 -1.2rem) rotate(45deg);
+        border-bottom: .6rem solid $clear;
+        @include transition(all .5s ease);
     }
 
     #main-nav {
@@ -87,7 +128,7 @@
 
 
 @include for-tablet-portrait-up {
-    @include navi-small
+    @include navi-small;
 }
 
 @include for-tablet-landscape-up {
@@ -95,5 +136,5 @@
 }
 
 @include for-phone-only {
-    @include navi-small
+    @include navi-small;
 }

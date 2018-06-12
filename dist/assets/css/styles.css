@@ -147,12 +147,12 @@ ol ol ol {
 
 @media (min-width: 600px) {
   body {
-    -webkit-transition: 0.3s all ease-in-out;
-    transition: 0.3s all ease-in-out; }
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease; }
   body.menu-open {
     padding-left: 25rem;
-    -webkit-transition: 0.3s all ease-in-out;
-    transition: 0.3s all ease-in-out; }
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease; }
   .main-menu {
     display: block;
     position: fixed;
@@ -161,15 +161,54 @@ ol ol ol {
     top: 0;
     height: 100%;
     overflow: auto;
-    -webkit-transition: 0.3s all ease-in-out;
-    transition: 0.3s all ease-in-out; }
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease; }
   .main-menu.menu-open {
     width: 25rem;
     right: calc(100% - 25rem);
-    -webkit-transition: 0.3s all ease-in-out;
-    transition: 0.3s all ease-in-out; }
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease; }
   .toggle-nav {
-    display: inline-block; }
+    display: inline-block;
+    width: 6rem;
+    height: 5rem;
+    background-color: transparent;
+    border: 0.2rem solid #f0f0f0;
+    color: transparent;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    padding: .8rem;
+    margin: .5rem; }
+  .toggle-nav:before {
+    content: "";
+    border-bottom: 0.6rem solid #f0f0f0;
+    display: block;
+    top: .8rem;
+    position: absolute;
+    width: 4rem;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  .toggle-nav:after {
+    content: "";
+    border-bottom: 1.8rem double #f0f0f0;
+    display: block;
+    bottom: .8rem;
+    position: absolute;
+    width: 4rem;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  .menu-open .toggle-nav::before {
+    -webkit-transform: translate(0 1.1rem) rotate(-45deg);
+            transform: translate(0 1.1rem) rotate(-45deg);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  .menu-open .toggle-nav::after {
+    -webkit-transform: translate(0 -1.2rem) rotate(45deg);
+            transform: translate(0 -1.2rem) rotate(45deg);
+    border-bottom: 0.6rem solid #f0f0f0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
   #main-nav {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
@@ -196,12 +235,12 @@ ol ol ol {
 
 @media (max-width: 599px) {
   body {
-    -webkit-transition: 0.3s all ease-in-out;
-    transition: 0.3s all ease-in-out; }
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease; }
   body.menu-open {
     padding-left: 25rem;
-    -webkit-transition: 0.3s all ease-in-out;
-    transition: 0.3s all ease-in-out; }
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease; }
   .main-menu {
     display: block;
     position: fixed;
@@ -210,15 +249,54 @@ ol ol ol {
     top: 0;
     height: 100%;
     overflow: auto;
-    -webkit-transition: 0.3s all ease-in-out;
-    transition: 0.3s all ease-in-out; }
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease; }
   .main-menu.menu-open {
     width: 25rem;
     right: calc(100% - 25rem);
-    -webkit-transition: 0.3s all ease-in-out;
-    transition: 0.3s all ease-in-out; }
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease; }
   .toggle-nav {
-    display: inline-block; }
+    display: inline-block;
+    width: 6rem;
+    height: 5rem;
+    background-color: transparent;
+    border: 0.2rem solid #f0f0f0;
+    color: transparent;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    padding: .8rem;
+    margin: .5rem; }
+  .toggle-nav:before {
+    content: "";
+    border-bottom: 0.6rem solid #f0f0f0;
+    display: block;
+    top: .8rem;
+    position: absolute;
+    width: 4rem;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  .toggle-nav:after {
+    content: "";
+    border-bottom: 1.8rem double #f0f0f0;
+    display: block;
+    bottom: .8rem;
+    position: absolute;
+    width: 4rem;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  .menu-open .toggle-nav::before {
+    -webkit-transform: translate(0 1.1rem) rotate(-45deg);
+            transform: translate(0 1.1rem) rotate(-45deg);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  .menu-open .toggle-nav::after {
+    -webkit-transform: translate(0 -1.2rem) rotate(45deg);
+            transform: translate(0 -1.2rem) rotate(45deg);
+    border-bottom: 0.6rem solid #f0f0f0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
   #main-nav {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
@@ -443,7 +521,8 @@ ol ol ol {
         flex-basis: 100%; } }
 
 body {
-  font-family: "Segoe UI", helvetica, sans-serif; }
+  font-family: "Segoe UI", helvetica, sans-serif;
+  line-height: 1.4em; }
 
 #main-nav,
 nav.main-menu {
