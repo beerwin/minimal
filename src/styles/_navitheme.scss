@@ -1,14 +1,7 @@
-// navigation colors:
-$navi-background: $accent;
-$navi-color: $clear;
-$navi-active-background: $accentLight;
-$navi-active-color: $clear;
-$navi-hover-background: $compRight;
-$navi-hover-color: $text;
-
 body {
     font-family: "Segoe UI", helvetica, sans-serif;
     line-height: 1.4em;
+    background-color: $body;
 }
 
 #main-nav,
