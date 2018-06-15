@@ -2,3 +2,153 @@ form {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+textarea,
+select {
+    border: .2rem solid $controlTrans;
+    height: 4rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    vertical-align: middle;
+    background-color: $controlTransBg;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: $accent;
+    background-color: $controlTransBg;
+}
+
+input[type="text"]:hover,
+input[type="number"]:hover,
+input[type="tel"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="url"]:hover,
+textarea:hover,
+select:hover {
+    border-color: $compLeft;
+}
+
+input[type="text"]:disabled,
+input[type="number"]:disabled,
+input[type="tel"]:disabled,
+input[type="email"]:disabled,
+input[type="password"]:disabled,
+input[type="url"]:disabled,
+textarea:disabled,
+select:disabled {
+    border-color: $neutral;
+    opacity: .5;
+}
+
+
+label.control-label{
+    input[type="checkbox"],
+    input[type="radio"] {
+        opacity: 0;
+        position: fixed;
+        top: -5rem;
+    }
+
+    input[type="checkbox"]+span,
+    input[type="radio"]+span {
+        width: 3rem;
+        height: 3rem;
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        margin-right: 1rem;
+    }
+
+    input[type="checkbox"]+span,
+    input[type="radio"]+span {
+        content: "";
+        border: .2rem solid $controlTrans;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    input[type="checkbox"]:focus+span,
+    input[type="radio"]:focus+span {
+        border-color: $accent;
+        background-color: $controlTransBg;
+    }
+
+    input[type="radio"]+span {
+        border-radius: 50%;
+    }
+
+    input[type="radio"]:checked+span:before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: $controlTrans;
+        width: 2.6rem;
+        height: 2.6rem;
+        margin: .5rem;
+        border-radius: 50%;
+    }
+
+    input[type="radio"]:focus:checked+span:before {
+        background-color: $accent;
+    }
+
+    input[type="checkbox"]:checked+span:before {
+        content: "";
+        display: block;
+        position: absolute;
+        border-bottom: .2rem solid $controlTrans;
+        border-right: .2rem solid $controlTrans;
+        width: 1.5rem;
+        height: 2.5rem;
+        margin: .5rem;
+        transform: translate(.5rem, -.3rem) rotate(30deg)
+    }    
+    
+    input[type="checkbox"]:disabled+span, 
+    input[type="radio"]:disabled+span {
+        opacity: .5;
+        border-color: $controlTrans;
+    }
+        
+}
+
+        
+label.control-label:hover {
+    input[type="checkbox"]+span,
+    input[type="radio"]+span {
+        border-color: $compLeft;
+    }
+    
+    input[type="checkbox"]:disabled+span,
+    input[type="radio"]:disabled+span {
+        border-color: $neutral;
+        opacity: .5;
+    }
+   
+}
+
+
+
+
+
+
+
+
+

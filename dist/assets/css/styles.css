@@ -1,4 +1,5 @@
-/* colors generated with http://paletton.com */
+/* Neutral colors alongside the color palette */
+/* colors generated with http://paletton.com (three-color option)*/
 /* https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862 */
 /* usage: 
 .my-box {
@@ -124,6 +125,130 @@ ol ol {
 
 ol ol ol {
   list-style: lower-roman; }
+
+form {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+textarea,
+select {
+  border: 0.2rem solid rgba(0, 0, 0, 0.3);
+  height: 4rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  font-size: 1.6rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0.4); }
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #446883;
+  background-color: rgba(255, 255, 255, 0.4); }
+
+input[type="text"]:hover,
+input[type="number"]:hover,
+input[type="tel"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="url"]:hover,
+textarea:hover,
+select:hover {
+  border-color: #CC8163; }
+
+input[type="text"]:disabled,
+input[type="number"]:disabled,
+input[type="tel"]:disabled,
+input[type="email"]:disabled,
+input[type="password"]:disabled,
+input[type="url"]:disabled,
+textarea:disabled,
+select:disabled {
+  border-color: rgba(0, 0, 0, 0.3);
+  opacity: .5; }
+
+label.control-label input[type="checkbox"],
+label.control-label input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  top: -5rem; }
+
+label.control-label input[type="checkbox"] + span,
+label.control-label input[type="radio"] + span {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 1rem; }
+
+label.control-label input[type="checkbox"] + span,
+label.control-label input[type="radio"] + span {
+  content: "";
+  border: 0.2rem solid rgba(0, 0, 0, 0.3);
+  width: 4rem;
+  height: 4rem; }
+
+label.control-label input[type="checkbox"]:focus + span,
+label.control-label input[type="radio"]:focus + span {
+  border-color: #446883;
+  background-color: rgba(255, 255, 255, 0.4); }
+
+label.control-label input[type="radio"] + span {
+  border-radius: 50%; }
+
+label.control-label input[type="radio"]:checked + span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 2.6rem;
+  height: 2.6rem;
+  margin: .5rem;
+  border-radius: 50%; }
+
+label.control-label input[type="radio"]:focus:checked + span:before {
+  background-color: #446883; }
+
+label.control-label input[type="checkbox"]:checked + span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-bottom: 0.2rem solid rgba(0, 0, 0, 0.3);
+  border-right: 0.2rem solid rgba(0, 0, 0, 0.3);
+  width: 1.5rem;
+  height: 2.5rem;
+  margin: .5rem;
+  -webkit-transform: translate(0.5rem, -0.3rem) rotate(30deg);
+          transform: translate(0.5rem, -0.3rem) rotate(30deg); }
+
+label.control-label input[type="checkbox"]:disabled + span,
+label.control-label input[type="radio"]:disabled + span {
+  opacity: .5;
+  border-color: rgba(0, 0, 0, 0.3); }
+
+label.control-label:hover input[type="checkbox"] + span,
+label.control-label:hover input[type="radio"] + span {
+  border-color: #CC8163; }
+
+label.control-label:hover input[type="checkbox"]:disabled + span,
+label.control-label:hover input[type="radio"]:disabled + span {
+  border-color: rgba(0, 0, 0, 0.3);
+  opacity: .5; }
 
 @media (min-width: 600px) {
   .toggle-nav {
@@ -522,7 +647,8 @@ ol ol ol {
 
 body {
   font-family: "Segoe UI", helvetica, sans-serif;
-  line-height: 1.4em; }
+  line-height: 1.4em;
+  background-color: #ffffff; }
 
 #main-nav,
 nav.main-menu {

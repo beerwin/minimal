@@ -1,9 +1,14 @@
+/* Neutral colors alongside the color palette */
+
 $text: #333333;
 $clear: #f0f0f0;
-$body: $clear;
+$body: #ffffff;
 $neutral: rgba(0,0,0,.3);
 $neutralNegative: rgba(255,255,255,.1);
-/* colors generated with http://paletton.com */
+$controlTrans: rgba(0,0,0,.3);
+$controlTransBg: rgba(255,255,255,.4);
+
+/* colors generated with http://paletton.com (three-color option)*/
 
 $accent: #446883;
 $accentLight: #627787;
@@ -23,3 +28,15 @@ $compRightHiLight: #F0DFAD;
 $compLightDark: #BC9520;
 $compLightDkShadow: #9C7D22;
 
+$navi-background: $accent;
+$navi-color: $clear;
+$navi-active-background: $accentLight;
+$navi-active-color: $clear;
+$navi-hover-background: $compRight;
+$navi-hover-color: $text;
+
+$bodyFont: "Segoe UI", helvetica, sans-serif;
+$bodyLineHeight: 1.4em;
+$bodyBackground: $body;
+
+$boxShadow: $neutral;

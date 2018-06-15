@@ -112,6 +112,84 @@
             <blockquote>
                 This is a quote
             </blockquote>
+            <h1>Form elements</h1>
+            <form action="#">
+                <h2>Text fields</h2>
+                <div>
+                    <label class="control-label" for="text">Text field</label>
+                    <input type="text" id="text">
+                </div>
+                <div>
+                    <label class="control-label" for="textd">Disabled Text field</label>
+                    <input type="text" id="textd" disabled>
+                </div>
+                <div>
+                    <label class="control-label" for="pwd">Password field</label>
+                    <input type="password" id="pwd">
+                </div>
+                <div>
+                        <label for="" class="control-label">Text area</label>
+                        <textarea id="xa" cols="50" rows="20"></textarea>
+                    </div>
+                <div>
+                    <label for="xa" class="control-label">Disabled text area</label>
+                    <textarea id="xa" cols="50" rows="20" disabled></textarea>
+                </div>
+                <h2>Dropdown</h2>
+                <div>
+                    <label for="s" class="control-label">Select element</label>
+                    <select id="s">
+                        <option value="0">Default</option>
+                        <optgroup label="First group">
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">Four</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div>
+                    <label for="s" class="control-label">Disabled Select element</label>
+                    <select id="s" disabled>
+                        <option value="0">Default</option>
+                        <optgroup label="First group">
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">Four</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <h2>Checkbox</h2>
+                <div>
+                    <label class="control-label">
+                        <input type="checkbox"> <span></span>This is a checkbox
+                    </label>
+                </div>
+                <div>
+                    <label class="control-label">
+                        <input type="checkbox" disabled> <span></span>This is a disabled checkbox
+                    </label>
+                </div>
+                    
+                <h2>Radio buttons</h2>
+                <div>
+                    <label class="control-label">
+                        <input type="radio" name="xx"> <span></span>This is a radio
+                    </label>
+                    <label class="control-label">
+                        <input type="radio" name="xx"> <span></span>This is a radio
+                    </label>
+                </div>
+                <div>
+                    <label class="control-label">
+                        <input type="radio" name="xxx" disabled checked> <span></span>This is a disabled and checked radio button
+                    </label>
+                    <label class="control-label">
+                        <input type="radio" name="xxx" disabled> <span></span>This is a disabled radio button
+                    </label>
+                </div>
+            </form>
         </section>
         <section class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
             <p>This is another sidebar</p>
